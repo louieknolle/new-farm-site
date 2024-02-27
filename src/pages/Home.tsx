@@ -15,10 +15,7 @@ import zuchinniImg from '../media/img/zucchini.jpg'
 export default function Component() {
 	return (
 		<div className='flex min-h-[100dvh] flex-col justify-center scroll-smooth'>
-			<header
-				className='sticky top-0 flex h-24 items-center bg-slate-100 px-8 md:h-36 lg:px-12'
-				id='top'
-			>
+			<header className='sticky top-0 flex h-24 items-center bg-slate-100 px-8 md:h-36 lg:px-12'>
 				<a className='' href='/#top'>
 					<img
 						alt='handdrawn basket with produce and the words "Cotter Farm" underneath it'
@@ -43,7 +40,7 @@ export default function Component() {
 				</nav>
 			</header>
 			<main className='flex-1'>
-				<section className='w-full py-12 md:py-24 lg:py-32'>
+				<section className='w-full py-36' id='top'>
 					<div className='container px-4 md:px-6'>
 						<div className='grid items-center gap-6 lg:grid-cols-[1fr_800px] lg:gap-12 xl:grid-cols-[1fr_1100px]'>
 							<div className='space-y-4'>
