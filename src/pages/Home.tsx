@@ -12,7 +12,11 @@ export default function Component() {
 				id='top'
 			>
 				<a className='' href='/#top'>
-					<img alt='' className='h-36 w-auto' src={farmLogo} />
+					<img
+						alt='handdrawn basket with produ'
+						className='h-36 w-auto'
+						src={farmLogo}
+					/>
 					<span className='sr-only'>Cotter Farm</span>
 				</a>
 				<nav className='text-md ml-auto flex gap-4 font-medium underline-offset-4 sm:gap-6'>
