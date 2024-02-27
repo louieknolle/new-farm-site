@@ -3,10 +3,11 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import { Button, TextField, TextareaAutosize } from '@mui/material'
 import { NavLink } from 'react-router-dom'
 import acornImg from '../media/img/acorn.webp'
+import cropRowsImg from '../media/img/crop_rows.jpeg'
 import farmLogo from '../media/img/farmLogo.png'
 import bannerImg from '../media/img/greenhouse_mic.jpeg'
 import kaleImg from '../media/img/kale.jpeg'
-import cropRowsImg from '../media/img/rows.jpeg'
+import tillerRowsImg from '../media/img/rows.jpeg'
 import tomatoesImg from '../media/img/tomatoes.jpeg'
 import zuchinniImg from '../media/img/zucchini.jpg'
 
@@ -66,7 +67,7 @@ export default function Component() {
 						</div>
 					</div>
 				</section>
-				<section className='w-full py-12 md:py-24 lg:py-36' id='csa'>
+				<section className='w-full py-36' id='csa'>
 					<div className='container grid items-center gap-6 px-4 md:px-6'>
 						<div className='mx-auto max-w-3xl space-y-4'>
 							<div className='space-y-2'>
@@ -236,7 +237,7 @@ export default function Component() {
 						</div>
 					</div>
 				</section>
-				<section className='w-full py-12 md:py-24 lg:py-36' id='about'>
+				<section className='w-full py-36' id='about'>
 					<div className='container px-4 md:px-6'>
 						<div className='grid items-center gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]'>
 							<div className='space-y-2'>
@@ -257,15 +258,22 @@ export default function Component() {
 								<img
 									alt='small walk-behind tractor in a field of crops'
 									className='aspect-video rounded-xl object-cover'
-									src={cropRowsImg}
+									src={tillerRowsImg}
 								/>
 							</div>
 						</div>
 					</div>
 				</section>
 				<section className='w-full'>
-					<div className='container grid items-center gap-6 px-4 md:px-6'>
-						<div className='mx-auto max-w-3xl space-y-4'>
+					<div className='container px-4 md:px-6'>
+						<div className='grid items-center gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]'>
+							<div className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'>
+								<img
+									alt='small walk-behind tractor in a field of crops'
+									className='aspect-video rounded-xl object-cover'
+									src={cropRowsImg}
+								/>
+							</div>
 							<div className='space-y-2'>
 								<h2 className='text-3xl font-bold tracking-tighter sm:text-4xl'>
 									Our Values
@@ -281,7 +289,7 @@ export default function Component() {
 						</div>
 					</div>
 				</section>
-				<section className='w-full py-12 md:py-24 lg:py-32' id='contact'>
+				<section className='w-full py-36' id='contact'>
 					<div className='container grid items-center gap-6 px-4 md:px-6'>
 						<div className='mx-auto max-w-3xl space-y-4'>
 							<div className='space-y-2'>
