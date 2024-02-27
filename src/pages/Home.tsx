@@ -1,7 +1,14 @@
 /* eslint-disable import/no-extraneous-dependencies */
+import FacebookIcon from '@mui/icons-material/Facebook'
 import { Button, TextField, TextareaAutosize } from '@mui/material'
 import { NavLink } from 'react-router-dom'
+import acornImg from '../media/img/acorn.webp'
 import farmLogo from '../media/img/farmLogo.png'
+import bannerImg from '../media/img/greenhouse_mic.jpeg'
+import kaleImg from '../media/img/kale.jpeg'
+import cropRowsImg from '../media/img/rows.jpeg'
+import tomatoesImg from '../media/img/tomatoes.jpeg'
+import zuchinniImg from '../media/img/zucchini.jpg'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function Component() {
@@ -13,7 +20,7 @@ export default function Component() {
 			>
 				<a className='' href='/#top'>
 					<img
-						alt='handdrawn basket with produ'
+						alt='handdrawn basket with produce and the words "Cotter Farm" underneath it'
 						className='h-36 w-auto'
 						src={farmLogo}
 					/>
@@ -53,7 +60,7 @@ export default function Component() {
 								alt='man and woman farmers harvesting crops'
 								className='mx-auto aspect-video w-auto overflow-hidden rounded-xl object-cover object-center sm:w-full'
 								height='300'
-								src='/src/media/img/greenhouse_mic.jpeg'
+								src={bannerImg}
 								width='600'
 							/>
 						</div>
@@ -168,7 +175,7 @@ export default function Component() {
 									<img
 										alt='ripe, red tomatoes still on the vine'
 										className='aspect-square h-32 w-32 overflow-hidden rounded-lg object-cover object-center'
-										src='/src/media/img/tomatoes.jpeg'
+										src={tomatoesImg}
 									/>
 									<div className='ml-1 grid gap-1'>
 										<h3 className='text-lg font-semibold'>Tomatoes</h3>
@@ -181,7 +188,7 @@ export default function Component() {
 									<img
 										alt='several dark green acorn squash in a pile'
 										className='aspect-square h-32 w-32 overflow-hidden rounded-lg  object-cover object-center'
-										src='/src/media/img/acorn.webp'
+										src={acornImg}
 									/>
 									<div className='ml-1 grid gap-1'>
 										<h3 className='text-lg font-semibold'>Acorn squash</h3>
@@ -194,7 +201,7 @@ export default function Component() {
 									<img
 										alt='zuchinni laying side by side on a wooden table'
 										className='aspect-square h-32 w-32 overflow-hidden rounded-lg object-cover object-center'
-										src='/src/media/img/zucchini.jpg'
+										src={zuchinniImg}
 									/>
 									<div className='ml-1 grid gap-1'>
 										<h3 className='text-lg font-semibold'>Zuchinni</h3>
@@ -207,7 +214,7 @@ export default function Component() {
 									<img
 										alt=''
 										className='aspect-square h-32 w-32 overflow-hidden rounded-lg object-cover object-center'
-										src='/src/media/img/kale.jpeg'
+										src={kaleImg}
 									/>
 									<div className='ml-1 grid gap-1'>
 										<h3 className='text-lg font-semibold'>Kale</h3>
@@ -248,9 +255,9 @@ export default function Component() {
 							</div>
 							<div className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'>
 								<img
-									alt=''
+									alt='small walk-behind tractor in a field of crops'
 									className='aspect-video rounded-xl object-cover'
-									src='/src/media/img/rows.jpeg'
+									src={cropRowsImg}
 								/>
 							</div>
 						</div>
@@ -301,7 +308,7 @@ export default function Component() {
 					</div>
 				</section>
 			</main>
-			<footer className='flex w-full shrink-0 flex-col items-center gap-2 border-t px-4 py-6 sm:flex-row md:px-6'>
+			<footer className='flex w-full shrink-0 flex-row items-center gap-2 border-t px-4 py-6 md:px-6'>
 				<p className='text-xs text-gray-500 dark:text-gray-400'>
 					© 2024 Cotter Farm. All rights reserved.
 				</p>
@@ -309,9 +316,9 @@ export default function Component() {
 				<nav className='flex gap-4 sm:ml-auto sm:gap-6'>
 					<NavLink
 						className='text-xs underline-offset-4 hover:underline'
-						to='/'
+						to='https://www.facebook.com/cotterfarm'
 					>
-						Terms of Service
+						<FacebookIcon />
 					</NavLink>
 				</nav>
 			</footer>
