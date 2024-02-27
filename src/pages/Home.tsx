@@ -7,34 +7,25 @@ import farmLogo from '../media/img/farmLogo.png'
 export default function Component() {
 	return (
 		<div className='flex min-h-[100dvh] flex-col justify-center scroll-smooth'>
-			<header className='sticky top-0 flex h-36 items-center px-8 lg:px-12 bg-slate-100' id='top'>
+			<header
+				className='sticky top-0 flex h-36 items-center bg-slate-100 px-8 lg:px-12'
+				id='top'
+			>
 				<a className='' href='/#top'>
 					<img alt='' className='h-36 w-auto' src={farmLogo} />
 					<span className='sr-only'>Cotter Farm</span>
 				</a>
-				<nav className='ml-auto flex gap-4 sm:gap-6 text-md font-medium underline-offset-4'>
-					<a
-            className='underline-offset-4 hover:underline'
-						href='/#contact'
-					>
+				<nav className='text-md ml-auto flex gap-4 font-medium underline-offset-4 sm:gap-6'>
+					<a className='underline-offset-4 hover:underline' href='/#contact'>
 						Sign Up
 					</a>
-					<a
-            className='underline-offset-4 hover:underline'
-						href='/#csa'
-					>
+					<a className='underline-offset-4 hover:underline' href='/#csa'>
 						CSA Info
 					</a>
-					<a
-            className='underline-offset-4 hover:underline'
-						href='/#about'
-					>
+					<a className='underline-offset-4 hover:underline' href='/#about'>
 						About Us
 					</a>
-					<a
-            className='underline-offset-4 hover:underline'
-						href='/#contact'
-					>
+					<a className='underline-offset-4 hover:underline' href='/#contact'>
 						Contact
 					</a>
 				</nav>
@@ -56,15 +47,15 @@ export default function Component() {
 							</div>
 							<img
 								alt='man and woman farmers harvesting crops'
-								className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full w-auto'
+								className='mx-auto aspect-video w-auto overflow-hidden rounded-xl object-cover object-center sm:w-full'
 								height='300'
-								src='/src/media/img/farm_1.webp'
+								src='/src/media/img/greenhouse_mic.jpeg'
 								width='600'
 							/>
 						</div>
 					</div>
 				</section>
-				<section className='w-full py-12 md:py-24' id='csa'>
+				<section className='w-full py-12 md:py-24 lg:py-36' id='csa'>
 					<div className='container grid items-center gap-6 px-4 md:px-6'>
 						<div className='mx-auto max-w-3xl space-y-4'>
 							<div className='space-y-2'>
@@ -83,7 +74,7 @@ export default function Component() {
 						</div>
 					</div>
 				</section>
-				<section className='w-full bg-gray-200 py-12 md:py-24 lg:py-32'>
+				<section className='w-full bg-gray-200 py-12 md:py-24'>
 					<div className='container grid items-center gap-6 px-4 md:px-6'>
 						<div className='mx-auto max-w-3xl space-y-4'>
 							<div className='space-y-2'>
@@ -95,13 +86,39 @@ export default function Component() {
 									enjoying a variety of in-season fruits, vegetables, and herbs.
 									The exact contents of the share for the week depend on what is
 									ripe and ready to be harvested. Members can also enjoy add-ons
-									such as fresh flowers, eggs, or honey from the farm.
+									such as pick your own flowers and pork (call for details).
 								</p>
+								<ul className='list-disc space-y-2 pl-4 text-gray-950 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
+									<li>Season starts Friday, May 31st and lasts 25 weeks</li>
+									<li>
+										Shares are available for pick up Friday through Tuesday at
+										any time
+									</li>
+									<li>
+										The cost is $400 for the year, half shares also available
+									</li>
+									<li>
+										Shares are available for pickup on the farm, signs will
+										direct you to the walk-in cooler where the share boxes are
+									</li>
+									<li>
+										Spring share example: lettuce, spinach, kale, radishes,
+										beets
+									</li>
+									<li>
+										Summer share example: 3 tomatoes, 2 peppers, 2 zucchini, 2
+										cucumbers, green beans
+									</li>
+									<li>
+										Fall share example: sweet potatoes, acorn squash, turnips,
+										chard, peppers
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section className='w-full py-12 md:py-24 lg:py-32'>
+				<section className='w-full py-12 md:py-24'>
 					<div className='container grid items-center gap-6 px-4 md:px-6'>
 						<div className='mx-auto max-w-3xl space-y-4'>
 							<div className='space-y-2'>
@@ -130,12 +147,12 @@ export default function Component() {
 						</div>
 					</div>
 				</section>
-				<section className='w-full bg-gray-200 py-12 md:py-24 lg:py-32'>
+				<section className='w-full bg-gray-200 py-12 md:py-24'>
 					<div className='container grid items-center gap-6 px-4 md:px-6'>
 						<div className='mx-auto max-w-3xl space-y-4'>
 							<div className='space-y-2'>
 								<h2 className='text-3xl font-bold tracking-tighter sm:text-4xl'>
-									What Is in Season
+									Our Crops
 								</h2>
 								<p className='max-w-[600px] text-gray-950 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
 									Here are some of the delicious items you can expect in your
@@ -146,10 +163,10 @@ export default function Component() {
 								<div className='flex items-start space-y-1'>
 									<img
 										alt='ripe, red tomatoes still on the vine'
-										className='aspect-square overflow-hidden rounded-lg object-cover object-center w-32 h-32'
+										className='aspect-square h-32 w-32 overflow-hidden rounded-lg object-cover object-center'
 										src='/src/media/img/tomatoes.jpeg'
 									/>
-									<div className='grid gap-1 ml-1'>
+									<div className='ml-1 grid gap-1'>
 										<h3 className='text-lg font-semibold'>Tomatoes</h3>
 										<p className='text-sm text-gray-950'>
 											Ripe, juicy, and bursting with flavor.
@@ -158,25 +175,25 @@ export default function Component() {
 								</div>
 								<div className='flex items-start space-y-1'>
 									<img
-										alt='fresh picked strawberries in a basket'
-										className='aspect-square overflow-hidden rounded-lg object-cover object-center  w-32 h-32'
-										src='/src/media/img/strawberries.jpeg'
+										alt='several dark green acorn squash in a pile'
+										className='aspect-square h-32 w-32 overflow-hidden rounded-lg  object-cover object-center'
+										src='/src/media/img/acorn.webp'
 									/>
-									<div className='grid gap-1 ml-1'>
-										<h3 className='text-lg font-semibold'>Strawberries</h3>
+									<div className='ml-1 grid gap-1'>
+										<h3 className='text-lg font-semibold'>Acorn squash</h3>
 										<p className='text-sm text-gray-950'>
-											Sweet and perfect for snacking or adding to salads.
+											Perfect for roasting or making soup.
 										</p>
 									</div>
 								</div>
 								<div className='flex items-start space-y-1'>
 									<img
 										alt='zuchinni laying side by side on a wooden table'
-										className='aspect-square overflow-hidden rounded-lg object-cover object-center w-32 h-32'
+										className='aspect-square h-32 w-32 overflow-hidden rounded-lg object-cover object-center'
 										src='/src/media/img/zucchini.jpg'
 									/>
-									<div className='grid gap-1 ml-1'>
-										<h3 className='text-lg font-semibold'>Zucchini</h3>
+									<div className='ml-1 grid gap-1'>
+										<h3 className='text-lg font-semibold'>Zuchinni</h3>
 										<p className='text-sm text-gray-950'>
 											Versatile and delicious, great for grilling or roasting.
 										</p>
@@ -185,10 +202,10 @@ export default function Component() {
 								<div className='flex items-start space-y-1'>
 									<img
 										alt=''
-										className='aspect-square overflow-hidden rounded-lg object-cover object-center h-32 w-32'
+										className='aspect-square h-32 w-32 overflow-hidden rounded-lg object-cover object-center'
 										src='/src/media/img/kale.jpeg'
 									/>
-									<div className='grid gap-1 ml-1'>
+									<div className='ml-1 grid gap-1'>
 										<h3 className='text-lg font-semibold'>Kale</h3>
 										<p className='text-sm text-gray-950'>
 											Nutritious and hearty, perfect for making salads or
@@ -197,10 +214,18 @@ export default function Component() {
 									</div>
 								</div>
 							</div>
+							<p>
+								Additional crops: Arugula, tatsoi, mizuna, beets, broccoli, snap
+								pea shoots, sweet corn, Brussels sprouts if I get them early
+								enough, green beans, sweet potatoes, kohlrabi, Cherry tomatoes,
+								carrots, daikons, radishes, lettuce, winter squash, spinach,
+								pumpkins, cabbage, peppers, chard, eggplant, summer squash,
+								cucumbers, onions, garlic, turnips, water melon, normal melons
+							</p>
 						</div>
 					</div>
 				</section>
-        <section className='w-full py-12 md:py-24' id='about'>
+				<section className='w-full py-12 md:py-24 lg:py-36' id='about'>
 					<div className='container px-4 md:px-6'>
 						<div className='grid items-center gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]'>
 							<div className='space-y-2'>
@@ -208,14 +233,20 @@ export default function Component() {
 									About Cotter Farm
 								</h2>
 								<p className='max-w-[600px] text-gray-500 md:text-xl/relaxed'>
-                Cotter Farm is a Community Supported Agriculture (CSA) project serving Hamilton and Clermont Counties. CSA members visit the farm in Batavia, OH on the banks of the East Fork of the Little Miami River throughout the growing season to pick up their share of seasonally available produce. Entering our 5th year of direct to consumer produce sales, we are excited to offer pasture-raised pork for the first time.
+									Cotter Farm is a Community Supported Agriculture (CSA) project
+									serving Hamilton and Clermont Counties. CSA members visit the
+									farm in Batavia, OH on the banks of the East Fork of the
+									Little Miami River throughout the growing season to pick up
+									their share of seasonally available produce. Entering our 5th
+									year of direct to consumer produce sales, we are excited to
+									offer pasture-raised pork for the first time.
 								</p>
 							</div>
 							<div className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'>
 								<img
 									alt=''
 									className='aspect-video rounded-xl object-cover'
-									src='/src/media/img/overhead-farm-photo.webp'
+									src='/src/media/img/rows.jpeg'
 								/>
 							</div>
 						</div>
@@ -247,9 +278,10 @@ export default function Component() {
 									Contact Us or Sign Up!
 								</h2>
 								<p className='max-w-[600px] text-gray-500 md:text-xl/relaxed dark:text-gray-400'>
-									Interested in joining as a CSA member? Have questions about our CSA program? Want to learn more about
-									our farm? We would love to hear from you. Contact us using the
-									information below.
+									Interested in joining as a CSA member? Want to learn more
+									about our farm? We would love to hear from you. Contact us
+									using the information below. Or call us directly at
+									513-707-8960.
 								</p>
 							</div>
 							<form className='grid gap-4'>
@@ -264,25 +296,18 @@ export default function Component() {
 						</div>
 					</div>
 				</section>
-				
-				
 			</main>
 			<footer className='flex w-full shrink-0 flex-col items-center gap-2 border-t px-4 py-6 sm:flex-row md:px-6'>
 				<p className='text-xs text-gray-500 dark:text-gray-400'>
 					© 2024 Cotter Farm. All rights reserved.
 				</p>
+				<p>513-707-8960</p>
 				<nav className='flex gap-4 sm:ml-auto sm:gap-6'>
 					<NavLink
 						className='text-xs underline-offset-4 hover:underline'
 						to='/'
 					>
 						Terms of Service
-					</NavLink>
-					<NavLink
-						className='text-xs underline-offset-4 hover:underline'
-						to='/'
-					>
-						Privacy
 					</NavLink>
 				</nav>
 			</footer>
