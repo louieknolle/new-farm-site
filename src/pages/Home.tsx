@@ -16,13 +16,13 @@ export default function Component() {
 	return (
 		<div className='flex min-h-[100dvh] flex-col justify-center scroll-smooth'>
 			<header
-				className='sticky top-0 flex h-36 items-center bg-slate-100 px-8 lg:px-12'
+				className='sticky top-0 flex h-24 items-center bg-slate-100 px-8 md:h-36 lg:px-12'
 				id='top'
 			>
 				<a className='' href='/#top'>
 					<img
 						alt='handdrawn basket with produce and the words "Cotter Farm" underneath it'
-						className='h-36 w-auto'
+						className='h-24 w-auto md:h-36'
 						src={farmLogo}
 					/>
 					<span className='sr-only'>Cotter Farm</span>
