@@ -13,9 +13,10 @@ import zuchinniImg from '../media/img/zucchini.jpg'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function Component() {
+	
 	return (
 		<div className='flex min-h-[100dvh] flex-col justify-center scroll-smooth'>
-			<header className='sticky top-0 flex h-24 items-center bg-slate-100 px-8 md:h-36 lg:px-12'>
+			<header className='sticky top-0 flex h-24 items-center bg-slate-100 px-8 md:h-36 lg:px-12 z-10'>
 				<a className='' href='/#top'>
 					<img
 						alt='handdrawn basket with produce and the words "Cotter Farm" underneath it'
@@ -40,7 +41,7 @@ export default function Component() {
 				</nav>
 			</header>
 			<main className='flex-1'>
-				<section className='w-full py-36' id='top'>
+				<section className='w-full py-36' id='top' role='banner'>
 					<div className='container px-4 md:px-6'>
 						<div className='grid items-center gap-6 lg:grid-cols-[1fr_800px] lg:gap-12 xl:grid-cols-[1fr_1100px]'>
 							<div className='space-y-4'>
@@ -64,7 +65,7 @@ export default function Component() {
 						</div>
 					</div>
 				</section>
-				<section className='w-full py-36' id='csa'>
+				<section className='w-full py-36' id='csa' role='main'>
 					<div className='container grid items-center gap-6 px-4 md:px-6'>
 						<div className='mx-auto max-w-3xl space-y-4'>
 							<div className='space-y-2'>
@@ -234,7 +235,7 @@ export default function Component() {
 						</div>
 					</div>
 				</section>
-				<section className='w-full py-36' id='about'>
+				<section className='w-full py-36' id='about' role='complementary'>
 					<div className='container px-4 md:px-6'>
 						<div className='grid items-center gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]'>
 							<div className='space-y-2'>
@@ -286,7 +287,7 @@ export default function Component() {
 						</div>
 					</div>
 				</section>
-				<section className='w-full py-36' id='contact'>
+				<section className='w-full py-36' id='contact' role='form'>
 					<div className='container grid items-center gap-6 px-4 md:px-6'>
 						<div className='mx-auto max-w-3xl space-y-4'>
 							<div className='space-y-2'>
@@ -300,20 +301,29 @@ export default function Component() {
 									513-707-8960.
 								</p>
 							</div>
-							<form className='grid gap-4'>
-								<TextField placeholder='Name' type='text' />
-								<TextField placeholder='Email' type='email' />
+							<form 
+								action='https://api.web3forms.com/submit'
+  							method='POST' 
+								className='grid gap-4'
+							>
+								<input type='hidden' name='access_key' value='e93389bf-6541-401d-8c17-fc85d68379f3' />
+								<TextField placeholder='Name' type='text' aria-label='name' required name='name' />
+								<TextField placeholder='Email' type='email' aria-label='email' required name='email' />
 								<TextareaAutosize
 									className='min-h-[200px]'
 									placeholder='Message'
+									aria-label='message'
+									name='message'
+									required
 								/>
+								<input type='checkbox' name='botcheck' className='hidden' />
 								<Button type='submit'>Submit</Button>
 							</form>
 						</div>
 					</div>
 				</section>
 			</main>
-			<footer className='flex w-full shrink-0 flex-row items-center gap-2 border-t px-4 py-6 md:px-6'>
+			<footer className='flex w-full shrink-0 flex-row items-center gap-2 border-t px-4 py-6 md:px-6' role='contentinfo'>
 				<p className='text-xs text-gray-500 dark:text-gray-400'>
 					© 2024 Cotter Farm. All rights reserved.
 				</p>
