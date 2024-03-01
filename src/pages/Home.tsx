@@ -1,6 +1,6 @@
 import AboutUs from 'components/AboutUs'
 import Banner from 'components/Banner'
-import CSAInfo from 'components/CSAInfo'
+import CSAInfo from 'components/CsaInfo'
 import ContactForm from 'components/ContactForm'
 import Footer from 'components/Footer'
 import Header from 'components/Header'

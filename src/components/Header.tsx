@@ -1,4 +1,4 @@
-import farmLogo from '../media/img/farmLogo.png'
+import farmLogo from '../../public/farmLogo.png'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 function Header() {

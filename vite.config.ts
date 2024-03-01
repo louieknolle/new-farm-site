@@ -35,9 +35,9 @@ export default defineConfig(({ mode }) => ({
 					VitePWA({
 						registerType: 'autoUpdate',
 						includeAssets: [
-							'favicon.png',
+							'farmLogo.png',
 							'robots.txt',
-							'apple-touch-icon.png',
+							'farmLogo.png',
 							'icons/*.svg',
 							'fonts/*.woff2'
 						],
@@ -45,13 +45,13 @@ export default defineConfig(({ mode }) => ({
 							theme_color: '#BD34FE',
 							icons: [
 								{
-									src: '/android-chrome-192x192.png',
+									src: '/farmLogo.png',
 									sizes: '192x192',
 									type: 'image/png',
 									purpose: 'any maskable'
 								},
 								{
-									src: '/android-chrome-512x512.png',
+									src: '/farmLogo.png',
 									sizes: '512x512',
 									type: 'image/png'
 								}
