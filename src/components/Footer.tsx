@@ -8,7 +8,7 @@ export default function Footer() {
 			className='flex w-full shrink-0 flex-row items-center gap-2 border-t px-4 py-6 md:px-6'
 			role='contentinfo'
 		>
-			<p className='text-xs text-gray-500 dark:text-gray-400'>
+			<p className='text-xs text-gray-600'>
 				© 2024 Cotter Farm. All rights reserved.
 			</p>
 			<p>513-707-8960</p>

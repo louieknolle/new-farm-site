@@ -3,7 +3,7 @@ import farmLogo from '../../public/farmLogo.png'
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 function Header() {
 	return (
-		<header className='sticky top-0 z-10 flex h-24 items-center bg-slate-100 px-8 md:h-36 lg:px-12'>
+		<header className='sticky top-0 z-10 flex h-24 items-center bg-slate-100 px-8 md:h-36 lg:px-12 w-full'>
 			<a className='' href='/#top'>
 				<img
 					alt='handdrawn basket with produce and the words "Cotter Farm" underneath it'
