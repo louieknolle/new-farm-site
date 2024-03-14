@@ -2,7 +2,7 @@ import { Button, TextField, TextareaAutosize } from '@mui/material'
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function Component() {
 	return (
-		<section className='w-full py-36' id='contact' role='form'>
+		<section className='w-full py-36' id='contact' >
 			<div className='container grid items-center gap-6 px-4 md:px-6'>
 				<div className='mx-auto max-w-3xl space-y-4'>
 					<div className='space-y-2'>
