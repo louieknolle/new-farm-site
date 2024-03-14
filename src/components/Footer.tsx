@@ -16,6 +16,7 @@ export default function Footer() {
 				<NavLink
 					className='text-xs underline-offset-4 hover:underline'
 					to='https://www.facebook.com/cotterfarm'
+					ariaLabel='Visit our Facebook page'
 				>
 					<FacebookIcon />
 				</NavLink>
