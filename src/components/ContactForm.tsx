@@ -33,6 +33,7 @@ export default function Component() {
 								aria-label='name-input'
 								required
 								name='name' 
+								id='name'
 							/>
 						</label>
 						<label htmlFor='email' className='flex flex-col w-full'>
@@ -43,6 +44,7 @@ export default function Component() {
 								aria-label='email-input'
 								required
 								name='email' 
+								id='email'
 							/>
 						</label>
 						<label htmlFor='message' className='flex flex-col w-full'>
@@ -52,6 +54,7 @@ export default function Component() {
 								aria-label='message-input'
 								required
 								name='message'
+								id='message'
 								rows={4} 
 							/>
 						</label>
