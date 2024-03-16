@@ -9,7 +9,7 @@ export default function Banner() {
 					<h1 className='text-4xl font-bold tracking-tighter sm:text-5xl'>
 						Cotter Farm   
 					</h1>
-					<h3 className='text-3xl'>   Community Supported Agriculture</h3>
+					<h3 className='text-3xl'>Community Supported Agriculture</h3>
 				</div>
 				<img
 					alt='horizontal rows of crops in a greenhouse with a person in the background watering plants'
