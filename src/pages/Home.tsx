@@ -8,10 +8,10 @@ import Header from 'components/Header'
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function Component() {
 	return (
-		<div className='flex min-h-[100dvh] flex-col justify-center items-center'>
+		<div className='flex min-h-[100dvh] flex-col items-center justify-center'>
 			<Header />
-			<main className='flex-1 items-center flex flex-col justify-center'>
-				<Banner />
+			<Banner />
+			<main className='flex flex-1 flex-col items-center justify-center'>
 				<CSAInfo />
 				<AboutUs />
 				<ContactForm />

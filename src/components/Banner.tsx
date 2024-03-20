@@ -1,28 +1,28 @@
 import bannerImg from '../media/img/greenhouse_mic.jpeg'
-
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function Banner() {
 	return (
-		<section className='w-full py-36' id='top' role='banner'>
-			<div className='container px-4 md:px-6 flex flex-col items-center gap-y-4'>
-				<div className='flex items-baseline gap-4'>
+		<section className='py-36' id='top' role='banner'>
+			<div
+				className='container flex h-[40rem] min-w-[100dvw] items-start justify-center pt-8 text-gray-950'
+				style={{
+					backgroundImage: `url(${bannerImg})`,
+					backgroundPosition: 'center',
+					backgroundSize: 'cover',
+					backgroundRepeat: 'no-repeat'
+				}}
+			>
+				<div className='flex w-full max-w-2xl flex-col items-center justify-center rounded-xl border-2 border-gray-950 bg-gray-200 bg-opacity-80 p-8 text-center font-bold'>
 					<h1 className='text-4xl font-bold tracking-tighter sm:text-5xl'>
-						Cotter Farm   
+						Cotter Farm CSA
 					</h1>
-					<h3 className='text-3xl'>Community Supported Agriculture</h3>
+					<p className='mx-auto max-w-3xl md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
+						Enjoy a weekly box of fresh, locally grown produce straight from our
+						farm to your table. Our Community Supported Agriculture program
+						connects you with the best the season has to offer while supporting
+						sustainable agriculture.
+					</p>
 				</div>
-				<img
-					alt='horizontal rows of crops in a greenhouse with a person in the background watering plants'
-					className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center w-full'
-					height='300'
-					src={bannerImg}
-					width='600'
-				/>
-				<p className='mx-auto max-w-3xl text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-					Enjoy a weekly box of fresh, locally grown produce straight from
-					our farm to your table. Our CSA program connects you with the best
-					the season has to offer while supporting sustainable agriculture.
-				</p>
 			</div>
 		</section>
 	)
