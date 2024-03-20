@@ -1,7 +1,7 @@
 import acornImg from '../media/img/acorn.webp'
+import kaleImg from '../media/img/kale.jpeg'
 import tomatoesImg from '../media/img/tomatoes.jpeg'
 import zuchinniImg from '../media/img/zucchini.jpg'
-import kaleImg from '../media/img/kale.jpeg'
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default function CSAInfo() {
 	return (
@@ -25,7 +25,7 @@ export default function CSAInfo() {
 					</div>
 				</div>
 			</section>
-			<section className='w-full bg-gray-200 py-12 md:py-24'>
+			<section className='w-full bg-gray-200 py-12 md:py-24 rounded-xl'>
 				<div className='container grid items-center gap-6 px-4 md:px-6'>
 					<div className='mx-auto max-w-3xl space-y-4'>
 						<div className='space-y-2'>
@@ -97,7 +97,7 @@ export default function CSAInfo() {
 					</div>
 				</div>
 			</section>
-			<section className='w-full bg-gray-200 py-12 md:py-24'>
+			<section className='w-full bg-gray-200 py-12 md:py-24 rounded-xl'>
 				<div className='container grid items-center gap-6 px-4 md:px-6'>
 					<div className='mx-auto max-w-3xl space-y-4'>
 						<div className='space-y-2'>

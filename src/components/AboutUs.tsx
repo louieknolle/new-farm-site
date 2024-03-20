@@ -6,12 +6,12 @@ export default function AboutUs() {
 		<>
 			<section className='w-full py-36' id='about' role='complementary'>
 				<div className='container px-4 md:px-6'>
-					<div className='grid items-center gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]'>
+					<div className='flex flex-col items-center gap-4'>
 						<div className='space-y-2'>
 							<h2 className='text-3xl font-bold tracking-tighter sm:text-4xl'>
 								About Cotter Farm
 							</h2>
-							<p className='max-w-[600px] text-gray-500 md:text-xl/relaxed'>
+							<p className='mx-auto max-w-3xl text-gray-600 md:text-xl/relaxed'>
 								Cotter Farm is a Community Supported Agriculture (CSA) project
 								serving Hamilton and Clermont Counties. CSA members visit the
 								farm in Batavia, OH on the banks of the East Fork of the Little
@@ -21,7 +21,7 @@ export default function AboutUs() {
 								pasture-raised pork for the first time.
 							</p>
 						</div>
-						<div className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'>
+						<div className='max-w-3xl mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'>
 							<img
 								alt='small walk-behind tractor in a field of crops'
 								className='aspect-video rounded-xl object-cover'
@@ -33,25 +33,25 @@ export default function AboutUs() {
 			</section>
 			<section className='w-full'>
 				<div className='container px-4 md:px-6'>
-					<div className='grid items-center gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]'>
-						<div className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'>
-							<img
-								alt='small walk-behind tractor in a field of crops'
-								className='aspect-video rounded-xl object-cover'
-								src={cropRowsImg}
-							/>
-						</div>
+					<div className='flex flex-col items-center gap-4'>
 						<div className='space-y-2'>
 							<h2 className='text-3xl font-bold tracking-tighter sm:text-4xl'>
 								Our Values
 							</h2>
-							<p className='max-w-[600px] text-gray-500 md:text-xl/relaxed dark:text-gray-400'>
+							<p className='max-w-3xl text-gray-600 md:text-xl/relaxed'>
 								We are committed to sustainable and regenerative farming
 								practices that prioritize the health of the soil, the well-being
 								of our plants, and the quality of the food we produce. Our farm
 								is a place of diversity and abundance, where we work in harmony
 								with nature to create a thriving ecosystem.
 							</p>
+						</div>
+						<div className='max-w-3xl mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'>
+							<img
+								alt='small walk-behind tractor in a field of crops'
+								className='aspect-video rounded-xl object-cover'
+								src={cropRowsImg}
+							/>
 						</div>
 					</div>
 				</div>
