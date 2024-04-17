@@ -17,10 +17,7 @@ export default function Banner() {
 						Cotter Farm CSA
 					</h1>
 					<p className='mx-auto max-w-3xl md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-						Enjoy a weekly box of fresh, locally grown produce straight from our
-						farm to your table. Our Community Supported Agriculture program
-						connects you with the best the season has to offer while supporting
-						sustainable agriculture.
+						Join our Community Supported Agriculture and enjoy a weekly box of fresh, locally grown produce straight from our farm to your table.
 					</p>
 				</div>
 			</div>
